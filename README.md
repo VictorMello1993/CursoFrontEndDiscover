@@ -6,6 +6,7 @@ Curso de front-end com Node.js dentro da plataforma da <a href="https://rocketse
   <li>Atributos do form</li>
   <li>Como trabalhar com fontes no CSS</li>
   <li>HTML semântico</li>
+  <li>Entre outros</li>
 </ul>
   
     
