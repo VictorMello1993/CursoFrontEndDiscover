@@ -1,0 +1,46 @@
+<div class="topo">Cabeçalho</div>
+<div class="conteudo">Conteúdo</div>
+<div class="infoAdicionais">Barra lateral</div>
+<div class="rodape">Rodapé</div>
+
+<style>
+  body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    /* grid-template-areas:
+       "linha1 col1 linha1 col2 ... linha1 colN"
+       "linha2 col1 linha2 col2 ... linha2 colN"
+       "linha3 col1 linha3 col2 ... linha3 colN"
+       .
+       .
+       .
+       "linhaN" col1 linhaN col2 ... linhaN colN */
+    grid-template-areas: "topo topo"
+                         "conteudo aside"
+                         "rodape rodape";
+
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+  }
+
+  .topo{
+    grid-area: topo;
+    background-color: green;
+  }
+  
+  .conteudo{
+    grid-area: conteudo;
+    background-color: red;
+  }
+
+  .infoAdicionais{
+    grid-area: aside;
+    background-color: blue;
+  }
+
+  .rodape{
+    grid-area: rodape;
+    background-color: gray;
+  }
+</style>

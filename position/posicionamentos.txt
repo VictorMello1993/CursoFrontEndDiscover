@@ -1,0 +1,44 @@
+Tipos de posicionamentos:
+- static (padrão) => Os elementos ficarão posicionados com fluxo normal, onde as divs sempre ficam um embaixo do outro
+                   por serem elementos block que ocupam 100% da largura da página (ou do elemento pai se for aninhado), 
+                   os outros como span e parágrafo (tag <p>) são elementos inline, logo 
+                   sempre ficam um ao lado do outro.
+
+- relative => Os elementos com position relative permitem se posicionar de acordo com as propriedades:
+                      - top
+                      - bottom
+                      - left
+                      - right
+                      - z-index
+              em relação ao seu elemento pai. Se não tiver nenhum outro elemento que o englobe, a posição será em
+              relação à página inteira.
+
+- absolute => Também libera as cinco propriedades acima. A diferença é que com a position absolute, a posição é 
+              sempre em relação à página inteira, desde que não exista nenhum elemento que o englobe com a 
+              position:relative, que no caso será absoluto em relação ao elemento pai.
+
+- fixed => Também libera as cinco propriedades acima. A diferença é que com a position fixed, o elemento fica 
+           fixo em relação à página inteira.
+
+
+- element stacking => Significa empilhamento dos elementos. Normalmente utiliza-se z-index para que um elemento fique
+                    um em cima do outro elemento, no sentido de ficar na camada superior em relação à camada do 
+                    elemento sobreposto, ou seja, a profundidade do eixo z deve ficar maior do que a posição z
+                    dos outros elementos
+
+- Flexbox => Permite posicionar elementos dentro de uma div em uma única dimensão (horizontal ou vertical).
+           Ela permite realizar alinhamentos, direcionamento para definir o eixo padrão, 
+           ordenar e até mesmo ajustar tamanhos
+
+            ```css
+            div.parent {
+            display: flex;
+            }
+            ```
+
+- Grid => Permite posicionar elementos dentro de uma div em duas dimensões (horizontal e vertical).
+          Os elementos podem ser flexíveis ou fixo.
+          O grid permite criar espaços para os elementos filhos habitarem.          
+
+
+
