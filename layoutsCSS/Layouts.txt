@@ -1,0 +1,67 @@
+Layout é a maneira como os elementos estão distribuídos na tela
+
+Existem 4 tipos de layout:
+  - Normal flow
+  - Table
+  - Tabless
+  - Flexbox
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Normal flow => É a maneira que os elementos com display:block e display:inline ficam na tela. Os elementos do 
+tipo block sempre ficam um embaixo do outro, cada um deles ocupando toda a largura da página. Já os elementos inline ficam sempre um ao lado do 
+outro, pois a largura é ocupada no conteúdo desse elemento.
+
+Nos elementos block, é possível aplicar width, heigth, margin e padding
+
+Nos elementos inline não é possível aplicar width, heigth, margin e padding.
+Além disso, ao aplicar o float, automaticamente eles assumem características de display:block. Se aplicado dentro de um texto, irá seguir o fluxo 
+normal do conteúdo.
+
+Elementos block: <div>, <p>, <header>, <main>, <section>, <footer>, <h1>, <h2>, <ul>, <li>, <article>
+Elementos inline: <a>, <span>, <b>, <i>, <strong>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tables (tabelas) => É a maneira que os elementos ficam dispostos em forma de tabela, através dos elementos <td> (coluna) e <tr> (linha).
+
+Exemplo:
+<table>
+  <tr>
+    <td> Hora </td>
+    <td> 20:00 </td>
+  </tr>
+  <tr>
+    <td> Hora </td>
+    <td> 20:37 </td>
+  </tr>
+  <tr>
+    <td> Hora </td>
+    <td> 20:37 </td>
+    <td> Outra coisa </td>
+  </tr>
+</table>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tabless (sem tabela) => É a maneiras que os elementos ficam distribuídos sem em forma de tabela. Isso é definido pelas propriedades 'float' e 'clear', para que
+           os elementos possam mudar de posição na tela.
+
+Exemplo:
+<div style="float: left">
+  esquerda
+</div>
+
+<div style="float: right">
+  direita
+</div>
+
+# Essa div irá ocupar o fluxo normal na página, ou seja, a propriedade 'clear' limpa a configuração de 'float: left' e 'float: right'
+<div style="float: both"> 
+  normal
+</div>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Flexbox => Os elementos serão flexíveis, em relação a um determinado eixo (horizontal ou vertical). Dessa forma, os elementos internos irão receber
+           melhor o ALINHAMENTO, ORDENAÇÃO e TAMANHO
